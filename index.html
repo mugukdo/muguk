@@ -97,8 +97,15 @@ section{position:relative;z-index:1;}
 .closing-body p{font-size:clamp(.92rem,1.8vw,1.05rem);font-weight:300;line-height:2.3;color:rgba(247,243,236,.5);margin-bottom:1.2rem;}
 .closing-final{font-size:1rem;font-weight:700;letter-spacing:.2em;color:var(--gold);margin-top:2.5rem;display:block;}
 
-footer{background:#080602;padding:2.8rem 2rem;text-align:center;font-size:.7rem;letter-spacing:.2em;color:rgba(247,243,236,.18);}
-footer span{color:var(--gold);opacity:.45;}
+/* ── FOOTER ── */
+footer {
+  background: #04080F; padding: 2.8rem 2rem;
+  text-align: center; font-size: .7rem; letter-spacing: .2em;
+  color: rgba(232,245,242,.18); font-family: 'Noto Sans KR', sans-serif;
+}
+footer span { color: var(--accent); opacity: .45; }
+footer a { color: rgba(240,244,248,.3); text-decoration: none; transition: color .2s; }
+footer a:hover { color: var(--accent-l); }
 
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
